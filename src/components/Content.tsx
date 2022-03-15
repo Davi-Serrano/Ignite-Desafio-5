@@ -39,5 +39,5 @@ interface ContentProps {
 }
 
 export const Content = memo(ContentItem, (prevprops, nextprops)=>{
-  return prevprops.movies[0].imdbID === prevprops.movies[0].imdbID
+  return prevprops.selectedGenre.id === nextprops.selectedGenre.id
 })
